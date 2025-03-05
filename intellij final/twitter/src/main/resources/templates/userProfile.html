@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter User Profile</title>
+</head>
+<body>
+<h1>Twitter User Profile</h1>
+<p><strong>ID:</strong> ${user.id}</p>
+<p><strong>Name:</strong> ${user.name}</p>
+<p><strong>Username:</strong> ${user.username}</p>
+<p><strong>Created At:</strong> ${user.createdAt}</p>
+<p><strong>Description:</strong> ${user.description}</p>
+<form action="/twitter/declare" method="post">
+  <button type="신고">Search with POST</button>
+</form>
+</body>
+</html>
