@@ -33,6 +33,7 @@ public class TwitterController {
     public String getUser(@RequestParam("username") String username, Model model, HttpSession session) throws Exception {
         // Twitter API로 사용자 정보 가져오기
         System.out.println(username);
+        System.out.println("프론트로부터 데이터 받기 성공");
 
         session.setAttribute("username_save", username);
         userInfoJson = twitterService.getUserInfo(username);
